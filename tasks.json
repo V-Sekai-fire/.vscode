@@ -1,0 +1,30 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Godot Engine Project.",
+            "type": "shell",
+            "args": [
+                "scu_build=yes",
+                "platform=macos",
+                "target=editor",
+                "use_llvm=yes",
+                "use_lto=yes",
+                "debug_symbol=yes",
+                "tests=yes",
+                "compiledb=yes"
+            ],
+            "command": "scons",
+            "options": {
+                "cwd": "${workspaceFolder}/godot"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

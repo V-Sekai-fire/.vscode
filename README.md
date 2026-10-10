@@ -12,4 +12,4 @@ Clone it as `.vscode/` at the root of a workspace that holds the engine source i
 
 ## Licence
 
-The licence is not stated.
+MIT. See [LICENSE](LICENSE).
